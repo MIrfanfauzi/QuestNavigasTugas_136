@@ -45,5 +45,20 @@ fun FormDataDiri(
             )
             .padding(bottom = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
-    ) {}
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(colorResource(id = R.color.purple_400))
+                .padding(vertical = 40.dp)
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White,
+                modifier = Modifier.align(Alignment.Center)
+            )
+        }
+    }
 }
