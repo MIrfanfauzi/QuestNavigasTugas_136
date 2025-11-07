@@ -42,6 +42,29 @@ fun DataApp(
                     }
                 )
             }
+            composable(
+                route = "Detail/{nama}/{jk}/{status}/{alamat}"
+            ) { backStackEntry ->
+                val nama = backStackEntry.arguments?.getString("nama") ?: ""
+                val jk = backStackEntry.arguments?.getString("jk") ?: ""
+                val status = backStackEntry.arguments?.getString("status") ?: ""
+                val alamat = backStackEntry.arguments?.getString("alamat") ?: ""
+
+                TampilData(
+                    nama = nama,
+                    jk = jk,
+                    status = status,
+                    alamat = alamat,
+                    onBackBtnClick = {
+                        cancelAndBackToFormulirku(navController)
+                    },
+                    onHomeBtnClick = {
+                        navController.navigate(Navigasi.Awal.name) {
+                            popUpTo(Navigasi.Awal.name) { inclusive = true }
+                        }
+                    }
+                )
+            }
         }
     }
 }
