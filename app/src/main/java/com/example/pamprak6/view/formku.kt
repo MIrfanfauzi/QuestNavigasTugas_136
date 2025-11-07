@@ -23,4 +23,12 @@ import com.example.pamprak6.R
 fun FormDataDiri(
     modifier: Modifier = Modifier,
     onSubmitClick: (String, String, String, String) -> Unit
-) {}
+) {
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textStatus by remember { mutableStateOf("") }
+
+    val gender = listOf("Laki-Laki", "Perempuan")
+    val statusKawin = listOf("Janda", "Lajang", "Duda")
+}
