@@ -21,4 +21,13 @@ enum class Navigasi {
 fun DataApp(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
-) {}
+) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            // 🟣 mulai dari TampilanAwal
+            startDestination = Navigasi.Awal.name,
+            modifier = Modifier.padding(isiRuang)
+        ) {}
+    }
+}
