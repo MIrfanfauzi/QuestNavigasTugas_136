@@ -97,6 +97,17 @@ fun TampilData(
                         HorizontalDivider(thickness = 1.dp)
                     }
                 }
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.purple_400)),
+                    onClick = onBackBtnClick
+                ) {
+                    Text(text = stringResource(id = R.string.back))
+                }
+
             }
         }
     }
