@@ -35,6 +35,13 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Formulirku.name) {
+                FormDataDiri(
+                    onSubmitClick = { nama, jk, status, alamat ->
+                        navController.navigate("Detail/$nama/$jk/$status/$alamat")
+                    }
+                )
+            }
         }
     }
 }
