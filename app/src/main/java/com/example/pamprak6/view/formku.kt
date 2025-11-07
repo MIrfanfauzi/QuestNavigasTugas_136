@@ -31,4 +31,19 @@ fun FormDataDiri(
 
     val gender = listOf("Laki-Laki", "Perempuan")
     val statusKawin = listOf("Janda", "Lajang", "Duda")
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        colorResource(id = R.color.purple_300),
+                        colorResource(id = R.color.purple_400))
+                )
+            )
+            .padding(bottom = 40.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {}
 }
