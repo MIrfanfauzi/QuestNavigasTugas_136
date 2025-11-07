@@ -107,6 +107,14 @@ fun FormDataDiri(
                         Text(text = item)
                     }
                 }
+                Text(text = "ALAMAT", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(text = "Alamat") },
+                    onValueChange = { textAlamat = it }
+                )
 
 
 
