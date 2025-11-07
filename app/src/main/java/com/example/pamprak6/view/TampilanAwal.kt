@@ -29,4 +29,28 @@ import com.example.pamprak6.R
 @Composable
 fun TampilanAwal(
     onSubmitClick: () -> Unit
-) {}
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color.LightGray)
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 16.dp),
+        ) {
+            Text(
+                text = "Selamat Datang",
+                fontSize = 40.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.purple_500),
+                modifier = Modifier
+                    .align(Alignment.Center)
+            )
+        }
+    }
+}
