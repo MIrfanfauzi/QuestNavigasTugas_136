@@ -70,6 +70,13 @@ fun TampilanAwal(
             fontFamily = FontFamily.Monospace,
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
-
+        Text(
+            text = "20230140136",
+            fontSize = 18.sp,
+            color = colorResource(id = R.color.purple_500),
+            fontWeight = FontWeight.Medium,
+            fontFamily = FontFamily.SansSerif,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
     }
 }
