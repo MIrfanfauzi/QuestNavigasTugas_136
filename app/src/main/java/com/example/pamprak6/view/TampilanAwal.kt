@@ -87,6 +87,12 @@ fun TampilanAwal(
                 contentColor = Color.White
             ),
             onClick = onSubmitClick
-        ) {}
+        ) {
+            Text(
+                text = "Submit",
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp
+            )
+        }
     }
 }
